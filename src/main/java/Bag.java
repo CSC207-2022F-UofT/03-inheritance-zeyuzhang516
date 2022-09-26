@@ -108,8 +108,8 @@ public abstract class Bag {
 
      public String popItem(){
          String removed;
-         removed = this.contents[this.contents.length - 1];
-         this.contents[this.contents.length - 1] = new String();
+         removed = this.contents[this.getNumberOfContents() - 1];
+         this.contents[this.getNumberOfContents() - 1] = new String();
          this.numberOfContents = this.numberOfContents - 1;
          return removed;
      }
